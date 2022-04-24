@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TodoListApp.MainPage">
+
+    <StackLayout Padding="20" BackgroundColor="Black" >
+        <Frame BackgroundColor="Black" Padding="15" Margin="0,0,0,20"  >
+            <Label Text="0" FontSize="50" FontAttributes="None" HorizontalOptions="End" x:Name="LblResult" TextColor="WhiteSmoke"></Label>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--row 1-->            
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="C"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#DBDCDC"
+                CornerRadius="50"
+                x:Name="btnClear"
+                Clicked="btnClear_Clicked"
+                />
+
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="X"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#DBDCDC"
+                CornerRadius="50"
+                x:Name="btnX"
+                Clicked="btnX_Clicked"
+                />
+
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                Text="%"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#DBDCDC"
+                CornerRadius="50"
+                x:Name="btnPercentage"
+                Clicked="btnPercentage_Clicked"
+                />
+
+            <Button
+                Grid.Row="0"
+                Grid.Column="3"
+                Text="/"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#FF9F12"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommonOperation_Clicked"
+                />
+           
+            <!--row 2-->
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="1"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                x:Name="btnOne"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="2"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                Text="3"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                Text="*"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#FF9F12"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommonOperation_Clicked"
+                />
+
+            <!--row 3-->
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="4"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="5"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                Text="6"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="3"
+                Text="-"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="32"
+                BackgroundColor="#FF9F12"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommonOperation_Clicked"
+                />
+
+            <!--row 4-->
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                Text="7"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="8"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                Text="9"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"/>
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="3"
+                Text="+"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                Grid.RowSpan="2"
+                BackgroundColor="#FF9F12"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommonOperation_Clicked"
+                />
+
+            <!--row 2-->
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                Text="."
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked"
+                />
+
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="1"
+                Text="0"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                Clicked="btnCommon_Clicked" />
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="2"
+                Text="="
+                FontSize="Large"
+                FontAttributes="Bold"
+                Padding="25"
+                BackgroundColor="#6D6C6F"
+                TextColor="WhiteSmoke"
+                CornerRadius="50"
+                x:Name="btnEqual"
+                Clicked="btnEqual_Clicked"
+                />
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
